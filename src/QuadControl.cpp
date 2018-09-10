@@ -71,22 +71,18 @@ VehicleCommand QuadControl::GenerateMotorCommands(float collThrustCmd, V3F momen
 
 	////////////////////////////// BEGIN STUDENT CODE ///////////////////////////
 
-	float T = collThrustCmd; 
-	float l = sqrt(2.0) * L;
-
+	// float T = collThrustCmd; 
 	// momentCmd.z -= 1;
-
 	//cmd.desiredThrustsN[0] = (kappa*l*momentCmd.z + l*T + momentCmd.x + momentCmd.y) / (4*l);
 	//cmd.desiredThrustsN[1] = (-kappa*l*momentCmd.z + l*T - momentCmd.x + momentCmd.y) / (4*l);
 	//cmd.desiredThrustsN[2] = (-kappa*l*momentCmd.z + l*T + momentCmd.x - momentCmd.y) / (4*l);
 	//cmd.desiredThrustsN[3] = -(-l*(kappa*momentCmd.z + T) + momentCmd.x + momentCmd.y) / (4*l);
-
 	// Limit thrusts by min and max value
 	//for (int i = 0; i < 4; i++) {
 	//	cmd.desiredThrustsN[i] = LimitValue(cmd.desiredThrustsN[i], minMotorThrust, maxMotorThrust);
 	//}
 
-	l = L / sqrtf(2.f);
+	float l = L / sqrtf(2.f);
 	float t1 = momentCmd.x / l;
 	float t2 = momentCmd.y / l;
 	float t3 = -momentCmd.z / kappa;

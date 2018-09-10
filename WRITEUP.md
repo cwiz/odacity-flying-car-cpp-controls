@@ -129,7 +129,7 @@ The correct way to implement and tune controllers:
 
 Tune m parameter until drone stays in place. This scenario using very basic Motor Thrust Controller that equaly distributes thrust to 4 motors.
 
-![scenario_1](scenario1.png "Scenario 1")
+![scenario_1](scenario-1.png "Scenario 1")
 
 ### Scenario 2: Attitude Controll
 
@@ -139,7 +139,7 @@ This scenario needs 3 controllers implemented. Tricky part is to tune controller
 2. Roll/Pitch Controller
 3. Altitude Controller
 
-![scenario_2](scenario2.png "Scenario 2")
+![scenario_2](scenario-2.png "Scenario 2")
 
 ### Scenario 3: Position Control
 
@@ -148,16 +148,16 @@ This scenario adds two controller to the stack of used controllers.
 1. Body Rate Controller
 2. Lateral Position Controller
 
-![scenario_3](scenario3.png "Scenario 3")
+![scenario_3](scenario-3.png "Scenario 3")
 
 ### Scenario 4: Non-Linerities
 
 Non-linearities in trjectory are ruled using integral part in Altitude Controller.
 
-![scenario_4](scenario3.png "Scenario 4")
+![scenario_4](scenario-3.png "Scenario 4")
 
 ### Scenario 5: Trajectory Follow
 
 Tune knobs until drone is able to fly a 8-shaped trajectory.
 
-![scenario_5](scenario3.png "Scenario 5")
+![scenario_5](scenario-3.png "Scenario 5")
