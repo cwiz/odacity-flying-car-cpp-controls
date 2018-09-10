@@ -77,6 +77,7 @@
     <ClInclude Include="..\src\Utility\SimpleConfig.h" />
     <ClInclude Include="..\src\Utility\StringUtils.h" />
     <ClInclude Include="..\src\VehicleDatatypes.h" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\config\1_Intro.txt" />
@@ -98,7 +99,7 @@
     <ProjectGuid>{D8435B4A-B444-4C1B-ABC8-6D1C779B268D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Simulator</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

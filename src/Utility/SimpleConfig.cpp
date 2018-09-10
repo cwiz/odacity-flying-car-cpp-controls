@@ -40,6 +40,7 @@ void SimpleConfig::Reset(string rootParam)
 
 void SimpleConfig::ReadFile(const string& filename, int depth)
 {
+
   if (depth > MAX_INCLUDE_DEPTH)
   {
     SLR_WARNING0("Config includes excede maximum include depth (is something including itself?)");
